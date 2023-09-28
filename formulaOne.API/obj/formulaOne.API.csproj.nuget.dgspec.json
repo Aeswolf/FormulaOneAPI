@@ -1,0 +1,240 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/formulaOne.API.csproj": {}
+  },
+  "projects": {
+    "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/formulaOne.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/formulaOne.API.csproj",
+        "projectName": "formulaOne.API",
+        "projectPath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/formulaOne.API.csproj",
+        "packagesPath": "/home/aeswolf/.nuget/packages/",
+        "outputPath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/aeswolf/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/formulaOne.DataService.csproj": {
+                "projectPath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/formulaOne.DataService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.122, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/formulaOne.DataService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/formulaOne.DataService.csproj",
+        "projectName": "formulaOne.DataService",
+        "projectPath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/formulaOne.DataService.csproj",
+        "packagesPath": "/home/aeswolf/.nuget/packages/",
+        "outputPath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/aeswolf/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/formulaOne.Entities.csproj": {
+                "projectPath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/formulaOne.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/formulaOne.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/formulaOne.Entities.csproj",
+        "projectName": "formulaOne.Entities",
+        "projectPath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/formulaOne.Entities.csproj",
+        "packagesPath": "/home/aeswolf/.nuget/packages/",
+        "outputPath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/aeswolf/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
