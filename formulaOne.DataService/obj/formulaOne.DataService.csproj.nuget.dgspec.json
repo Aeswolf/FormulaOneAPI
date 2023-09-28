@@ -57,6 +57,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [

@@ -2,11 +2,12 @@ using formulaOne.DataService.Context;
 using formulaOne.DataService.Repositories.Implementations;
 using formulaOne.DataService.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 string appDbConnectionString = builder.Configuration.GetConnectionString("AppDb")!;
 string redisDbConnectionString = builder.Configuration.GetConnectionString("RedisDb")!;
-
+Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().WriteTo.File("./Logs/formulaOneApiLogs.txt").CreateLogger();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -25,8 +26,9 @@ builder.Services.AddStackExchangeRedisCache(options =>
 
 });
 
-builder.Services.AddScoped<IDriverRepository, DriverRepository>();
-builder.Services.AddScoped<IAchievementRepository, AchievementRepository>();
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 

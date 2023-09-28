@@ -3,19 +3,15 @@ using formulaOne.DataService.Context;
 using formulaOne.DataService.Repositories.Interfaces;
 using formulaOne.Entities.DbSets;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace formulaOne.DataService.Repositories.Implementations;
 
-public class DriverRepository : IDriverRepository
+public class DriverRepository : GenericRepository<Driver>, IDriverRepository
 {
-    private readonly APIDbContext _context;
 
-    public DriverRepository(APIDbContext context)
-    {
-        _context = context;
-    }
-
-    public async Task<Driver> AddDriverAsync(Driver driver)
+    public DriverRepository(APIDbContext context, ILogger logger) : base(context, logger) { }
+    public override async Task<Driver> AddAsync(Driver driver)
     {
         driver.Id = Guid.NewGuid();
         driver.CreatedAt = DateTime.UtcNow;
@@ -23,68 +19,73 @@ public class DriverRepository : IDriverRepository
 
         try
         {
-            await _context.Drivers.AddAsync(driver);
-            await _context.SaveChangesAsync();
+            await _dbSet!.AddAsync(driver);
             return driver;
         }
         catch (DbUpdateException)
         {
+            _logger.Error("Error occurred adding a new driver to the database");
             throw;
         }
     }
 
-    public async Task<bool> DeleteDriverByIdAsync(Guid id)
+    public override async Task<bool> DeleteByIdAsync(Guid id)
     {
         try
         {
-            Driver? existingDriver = await _context.Drivers.FindAsync(id);
+            Driver? existingDriver = await _dbSet!.FirstOrDefaultAsync(d => d.IsDeleted == false && d.Id == id);
 
             if (existingDriver is null) return false;
 
             existingDriver.IsDeleted = true;
             existingDriver.DeletedAt = DateTime.UtcNow;
 
-            await _context.SaveChangesAsync();
-
             return true;
-        }
-        catch (DbUpdateException)
-        {
-            throw;
-        }
-    }
-
-    public async Task<IEnumerable<Driver>> GetAllDriversAsync()
-    {
-        try
-        {
-            return await _context.Drivers.ToListAsync();
         }
         catch (DbException)
         {
+            _logger.Error("Error occurred when deleting a driver from the database");
             throw;
         }
     }
 
-    public async Task<Driver?> GetDriverByIdAsync(Guid id)
+    public override async Task<IEnumerable<Driver>> GetAllAsync()
     {
         try
         {
-            Driver? driverWithId = await _context.Drivers.FirstOrDefaultAsync(d => d.Id == id);
+            return await _dbSet!.Where(d => d.IsDeleted == false)
+                        .AsNoTracking()
+                        .AsSplitQuery()
+                        .OrderBy(d => d.CreatedAt)
+                        .ToListAsync();
+        }
+        catch (DbException)
+        {
+            _logger.Error("Error occurred retrieving drivers from the database");
+            throw;
+        }
+    }
+
+    public override async Task<Driver?> GetByIdAsync(Guid id)
+    {
+        try
+        {
+            Driver? driverWithId = await _dbSet!.FirstOrDefaultAsync(d => d.Id == id && d.IsDeleted == false);
 
             return driverWithId;
         }
         catch (DbException)
         {
+            _logger.Error("Error occurred retrieving a driver from the database");
             throw;
         }
     }
 
-    public async Task<Driver?> UpdateDriverAsync(Guid id, Driver driver)
+    public override async Task<Driver?> UpdateAsync(Guid id, Driver driver)
     {
         try
         {
-            Driver? existingDriver = await _context.Drivers.FindAsync(id);
+            Driver? existingDriver = await _dbSet!.FirstOrDefaultAsync(d => d.Id == id && d.IsDeleted == false);
 
             if (existingDriver is null) return null;
 
@@ -94,12 +95,11 @@ public class DriverRepository : IDriverRepository
             existingDriver.DateOfBirth = driver.DateOfBirth;
             existingDriver.UpdatedAt = DateTime.UtcNow;
 
-            await _context.SaveChangesAsync();
-
             return existingDriver;
         }
         catch (DbUpdateException)
         {
+            _logger.Error("Error occurred while updating a driver instance in the database");
             throw;
         }
     }

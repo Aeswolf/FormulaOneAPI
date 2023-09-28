@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+xaeY/HR5Nq9/ELNe7wNKiNnJ/Gz6fvz1KeldbGq5jxiihZ8IaHpu31t6uiNShBetPk3VHGm4kOzK5ClmD1G2Q==",
+  "dgSpecHash": "keXPyh+VOuar4exE9PC03VfdiJzlGiQrR0Ry+IlJ43MG3cyZ7nweirAklNC6M345Xm0pSEDBB7OIN6KY1XfQ5Q==",
   "success": true,
   "projectFilePath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/formulaOne.API.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "/home/aeswolf/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.11/microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.entityframeworkcore.design/7.0.11/microsoft.entityframeworkcore.design.7.0.11.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.11/microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
+    "/home/aeswolf/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.11/microsoft.entityframeworkcore.tools.7.0.11.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",

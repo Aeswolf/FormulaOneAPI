@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/K6pEGBtimUa58B3avAsKo/qbRuaeQx4l6YRSmFma7pvgjPUIx+Kz6U90u7tWBBxgW8dfOwKScle22lIejMNUA==",
+  "dgSpecHash": "HZyRTfnT6+7ThsMUdUXDibg2r1a8rVrtZcKZJj/QTI9vUZBc38TC93CAU+wb1hmfu3ZBdOtySOTd6kAHzbW2Dg==",
   "success": true,
   "projectFilePath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/formulaOne.DataService.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,9 @@
     "/home/aeswolf/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/home/aeswolf/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512",
+    "/home/aeswolf/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.11/npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
+    "/home/aeswolf/.nuget/packages/serilog/3.0.1/serilog.3.0.1.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
