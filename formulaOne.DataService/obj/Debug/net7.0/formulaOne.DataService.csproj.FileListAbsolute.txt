@@ -1,0 +1,17 @@
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/bin/Debug/net7.0/formulaOne.DataService.deps.json
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/bin/Debug/net7.0/formulaOne.DataService.runtimeconfig.json
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/bin/Debug/net7.0/formulaOne.DataService.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/bin/Debug/net7.0/formulaOne.DataService.pdb
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/bin/Debug/net7.0/formulaOne.Entities.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/bin/Debug/net7.0/formulaOne.Entities.pdb
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.csproj.AssemblyReference.cache
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.GeneratedMSBuildEditorConfig.editorconfig
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.AssemblyInfoInputs.cache
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.AssemblyInfo.cs
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.csproj.CoreCompileInputs.cache
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.csproj.CopyComplete
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/refint/formulaOne.DataService.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.pdb
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/formulaOne.DataService.genruntimeconfig.cache
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.DataService/obj/Debug/net7.0/ref/formulaOne.DataService.dll

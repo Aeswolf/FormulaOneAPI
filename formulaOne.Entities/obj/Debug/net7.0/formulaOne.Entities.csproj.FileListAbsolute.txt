@@ -1,0 +1,12 @@
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/formulaOne.Entities.csproj.AssemblyReference.cache
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/formulaOne.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/formulaOne.Entities.AssemblyInfoInputs.cache
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/formulaOne.Entities.AssemblyInfo.cs
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/formulaOne.Entities.csproj.CoreCompileInputs.cache
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/bin/Debug/net7.0/formulaOne.Entities.deps.json
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/bin/Debug/net7.0/formulaOne.Entities.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/bin/Debug/net7.0/formulaOne.Entities.pdb
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/formulaOne.Entities.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/refint/formulaOne.Entities.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/formulaOne.Entities.pdb
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.Entities/obj/Debug/net7.0/ref/formulaOne.Entities.dll

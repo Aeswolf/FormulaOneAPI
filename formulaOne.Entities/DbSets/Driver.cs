@@ -1,12 +1,11 @@
-using System.ComponentModel.DataAnnotation;
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 namespace formulaOne.Entities.DbSets;
 
 public class Driver : BaseEntity
 {
     public Driver()
     {
-        Achievements = HashSet<Achievements>();
+        Achievements = new HashSet<Achievement>();
     }
 
     [Required(ErrorMessage = "FirstName field can not be empty or null")]
