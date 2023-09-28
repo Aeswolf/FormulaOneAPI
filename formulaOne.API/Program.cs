@@ -1,4 +1,6 @@
 using formulaOne.DataService.Context;
+using formulaOne.DataService.Repositories.Implementations;
+using formulaOne.DataService.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +24,9 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.InstanceName = "FormulaOneAPI_";
 
 });
+
+builder.Services.AddScoped<IDriverRepository, DriverRepository>();
+builder.Services.AddScoped<IAchievementRepository, AchievementRepository>();
 
 var app = builder.Build();
 
