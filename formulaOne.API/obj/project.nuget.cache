@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "keXPyh+VOuar4exE9PC03VfdiJzlGiQrR0Ry+IlJ43MG3cyZ7nweirAklNC6M345Xm0pSEDBB7OIN6KY1XfQ5Q==",
+  "dgSpecHash": "M0/nmbM1lwUtPp8oBJ2sMkZrkNDkIhmjPeQYpdx6jVbrHK07lknBkcD2h5ocqDPv4/EocJn03Th1dKF3YVSrNA==",
   "success": true,
   "projectFilePath": "/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/formulaOne.API.csproj",
   "expectedPackageFiles": [
+    "/home/aeswolf/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/home/aeswolf/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.aspnetcore.openapi/7.0.11/microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
+    "/home/aeswolf/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.entityframeworkcore/7.0.11/microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.11/microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "/home/aeswolf/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.11/microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",

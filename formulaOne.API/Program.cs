@@ -1,3 +1,4 @@
+using formulaOne.API.MappingProfiles;
 using formulaOne.DataService.Context;
 using formulaOne.DataService.Repositories.Implementations;
 using formulaOne.DataService.Repositories.Interfaces;
@@ -26,7 +27,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 
 });
 
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Host.UseSerilog();
 

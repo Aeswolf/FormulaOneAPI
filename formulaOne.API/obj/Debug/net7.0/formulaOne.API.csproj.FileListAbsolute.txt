@@ -59,3 +59,5 @@
 /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/obj/Debug/net7.0/formulaOne.API.pdb
 /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/obj/Debug/net7.0/formulaOne.API.genruntimeconfig.cache
 /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/obj/Debug/net7.0/ref/formulaOne.API.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/bin/Debug/net7.0/AutoMapper.dll
+/home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
