@@ -1,0 +1,117 @@
+2023-09-28 17:55:36.347 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-28 17:55:41.283 +00:00 [DBG] Hosting starting
+2023-09-28 17:55:42.147 +00:00 [INF] Now listening on: http://localhost:5176
+2023-09-28 17:55:42.149 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-09-28 17:55:42.159 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-28 17:55:42.175 +00:00 [INF] Hosting environment: Development
+2023-09-28 17:55:42.178 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-09-28 17:55:42.178 +00:00 [DBG] Hosting started
+2023-09-28 17:58:13.893 +00:00 [INF] Application is shutting down...
+2023-09-28 17:58:13.906 +00:00 [DBG] Hosting stopping
+2023-09-28 17:58:14.008 +00:00 [DBG] Hosting stopped
+2023-09-28 17:58:47.838 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-28 17:58:48.131 +00:00 [DBG] Hosting starting
+2023-09-28 17:58:48.745 +00:00 [INF] Now listening on: http://localhost:5176
+2023-09-28 17:58:48.747 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-09-28 17:58:48.761 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-28 17:58:48.763 +00:00 [INF] Hosting environment: Development
+2023-09-28 17:58:48.763 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-09-28 17:58:48.764 +00:00 [DBG] Hosting started
+2023-09-28 18:29:47.754 +00:00 [INF] Application is shutting down...
+2023-09-28 18:29:47.771 +00:00 [DBG] Hosting stopping
+2023-09-28 18:29:47.855 +00:00 [DBG] Hosting stopped
+2023-09-30 01:40:48.466 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-30 01:40:48.747 +00:00 [DBG] Hosting starting
+2023-09-30 01:40:49.056 +00:00 [INF] Now listening on: http://localhost:5176
+2023-09-30 01:40:49.066 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-09-30 01:40:49.067 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-30 01:40:49.068 +00:00 [INF] Hosting environment: Development
+2023-09-30 01:40:49.069 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-09-30 01:40:49.070 +00:00 [DBG] Hosting started
+2023-09-30 01:41:32.448 +00:00 [INF] Application is shutting down...
+2023-09-30 01:41:32.457 +00:00 [DBG] Hosting stopping
+2023-09-30 01:41:32.500 +00:00 [DBG] Hosting stopped
+2023-09-30 01:42:11.269 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-30 01:42:11.602 +00:00 [DBG] Hosting starting
+2023-09-30 01:42:11.799 +00:00 [INF] Now listening on: http://localhost:5176
+2023-09-30 01:42:11.800 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-09-30 01:42:11.808 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-30 01:42:11.809 +00:00 [INF] Hosting environment: Development
+2023-09-30 01:42:11.814 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-09-30 01:42:11.815 +00:00 [DBG] Hosting started
+2023-09-30 01:44:44.123 +00:00 [INF] Application is shutting down...
+2023-09-30 01:44:44.149 +00:00 [DBG] Hosting stopping
+2023-09-30 01:44:44.695 +00:00 [DBG] Hosting stopped
+2023-09-30 01:47:58.888 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-30 01:47:59.214 +00:00 [DBG] Hosting starting
+2023-09-30 01:47:59.800 +00:00 [INF] Now listening on: http://localhost:5176
+2023-09-30 01:47:59.800 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-09-30 01:47:59.801 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-30 01:47:59.802 +00:00 [INF] Hosting environment: Development
+2023-09-30 01:47:59.803 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-09-30 01:47:59.803 +00:00 [DBG] Hosting started
+2023-09-30 01:49:04.443 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" accepted.
+2023-09-30 01:49:04.449 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" started.
+2023-09-30 01:49:04.660 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/ - -
+2023-09-30 01:49:04.703 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-30 01:49:04.992 +00:00 [DBG] No candidates found for the request path '/'
+2023-09-30 01:49:04.999 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 01:49:05.995 +00:00 [DBG] The request path  does not match the path filter
+2023-09-30 01:49:06.006 +00:00 [WRN] Failed to determine the https port for redirect.
+2023-09-30 01:49:06.029 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" completed keep alive response.
+2023-09-30 01:49:06.038 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/ - - - 404 0 - 1387.0884ms
+2023-09-30 01:49:17.140 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger - -
+2023-09-30 01:49:17.141 +00:00 [DBG] No candidates found for the request path '/swagger'
+2023-09-30 01:49:17.142 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 01:49:17.174 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" completed keep alive response.
+2023-09-30 01:49:17.178 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger - - - 301 0 - 37.2364ms
+2023-09-30 01:49:17.199 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/index.html - -
+2023-09-30 01:49:17.200 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-09-30 01:49:17.200 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 01:49:18.318 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" completed keep alive response.
+2023-09-30 01:49:18.326 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/index.html - - - 200 - text/html;charset=utf-8 1122.8152ms
+2023-09-30 01:49:18.710 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/swagger-ui.css - -
+2023-09-30 01:49:18.710 +00:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-09-30 01:49:18.710 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 01:49:18.719 +00:00 [DBG] Connection id "0HMU1ATMLU4VP" accepted.
+2023-09-30 01:49:18.720 +00:00 [DBG] Connection id "0HMU1ATMLU4VP" started.
+2023-09-30 01:49:18.731 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/swagger-ui-bundle.js - -
+2023-09-30 01:49:18.733 +00:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-09-30 01:49:18.740 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 01:49:18.740 +00:00 [DBG] Connection id "0HMU1ATMLU4VQ" accepted.
+2023-09-30 01:49:18.741 +00:00 [DBG] Connection id "0HMU1ATMLU4VQ" started.
+2023-09-30 01:49:18.742 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/swagger-ui-standalone-preset.js - -
+2023-09-30 01:49:18.742 +00:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-09-30 01:49:18.742 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 01:49:18.997 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-09-30 01:49:19.004 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-09-30 01:49:19.051 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" completed keep alive response.
+2023-09-30 01:49:19.052 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/swagger-ui.css - - - 200 144929 text/css 342.6294ms
+2023-09-30 01:49:19.059 +00:00 [DBG] Connection id "0HMU1ATMLU4VQ" completed keep alive response.
+2023-09-30 01:49:19.061 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 319.5712ms
+2023-09-30 01:49:19.108 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-09-30 01:49:19.108 +00:00 [DBG] Connection id "0HMU1ATMLU4VP" completed keep alive response.
+2023-09-30 01:49:19.108 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 377.5143ms
+2023-09-30 01:49:21.110 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - -
+2023-09-30 01:49:21.111 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-30 01:49:21.112 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 01:49:21.294 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/favicon-32x32.png - -
+2023-09-30 01:49:21.294 +00:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2023-09-30 01:49:21.294 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 01:49:21.295 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-09-30 01:49:21.295 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" completed keep alive response.
+2023-09-30 01:49:21.296 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/favicon-32x32.png - - - 200 628 image/png 1.3123ms
+2023-09-30 01:49:22.419 +00:00 [DBG] Connection id "0HMU1ATMLU4VP" completed keep alive response.
+2023-09-30 01:49:22.421 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1309.9244ms
+2023-09-30 01:51:29.887 +00:00 [DBG] Connection id "0HMU1ATMLU4VQ" disconnecting.
+2023-09-30 01:51:29.924 +00:00 [DBG] Connection id "0HMU1ATMLU4VQ" stopped.
+2023-09-30 01:51:29.960 +00:00 [DBG] Connection id "0HMU1ATMLU4VQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-30 01:51:31.828 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" disconnecting.
+2023-09-30 01:51:31.830 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" stopped.
+2023-09-30 01:51:31.830 +00:00 [DBG] Connection id "0HMU1ATMLU4VO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-30 01:51:32.827 +00:00 [DBG] Connection id "0HMU1ATMLU4VP" disconnecting.
+2023-09-30 01:51:32.828 +00:00 [DBG] Connection id "0HMU1ATMLU4VP" stopped.
+2023-09-30 01:51:32.828 +00:00 [DBG] Connection id "0HMU1ATMLU4VP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-30 02:42:20.222 +00:00 [INF] Application is shutting down...
+2023-09-30 02:42:20.265 +00:00 [DBG] Hosting stopping
+2023-09-30 02:42:20.460 +00:00 [DBG] Hosting stopped

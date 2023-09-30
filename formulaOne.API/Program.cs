@@ -29,6 +29,8 @@ builder.Services.AddStackExchangeRedisCache(options =>
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddSingleton<Serilog.ILogger>(provider => new LoggerConfiguration().MinimumLevel.Debug().WriteTo.File("./Logs/formulaOneDataServiceLogs.txt").CreateLogger());
+
 builder.Host.UseSerilog();
 
 var app = builder.Build();
