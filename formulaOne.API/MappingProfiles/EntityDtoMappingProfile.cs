@@ -14,8 +14,10 @@ public class EntityDtoMappingProfile : Profile
         CreateMap<Achievement, AchievementResponseDto>();
         CreateMap<CreateAchievementDto, Achievement>();
         CreateMap<UpdateAchievementDto, Achievement>();
-        CreateMap<Driver, DriverResponseDto>();
-        CreateMap<CreateDriverDto, Driver>();
+        CreateMap<Driver, DriverResponseDto>()
+            .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth.ToString()));
+        CreateMap<CreateDriverDto, Driver>()
+            .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => DateOnly.Parse(src.DateOfBirth)));
         CreateMap<UpdateDriverDto, Driver>();
     }
 }

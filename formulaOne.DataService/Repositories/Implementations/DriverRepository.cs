@@ -54,7 +54,7 @@ public class DriverRepository : GenericRepository<Driver>, IDriverRepository
         try
         {
             return await _dbSet!.Where(d => d.IsDeleted == false)
-                        .AsNoTracking()
+                        .Include(d => d.Achievements)
                         .AsSplitQuery()
                         .OrderBy(d => d.CreatedAt)
                         .ToListAsync();

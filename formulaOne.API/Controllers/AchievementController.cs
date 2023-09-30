@@ -13,7 +13,7 @@ namespace formulaOne.API.Controllers;
 [Route("/api/achievement")]
 public class AchievementController : BaseController
 {
-    public AchievementController(IUnitOfWork unitOfWork, IMapper mapper, ILogger logger, IDistributedCache cache) : base(unitOfWork, mapper, logger, cache)
+    public AchievementController(IUnitOfWork unitOfWork, IMapper mapper, Serilog.ILogger logger, IDistributedCache cache) : base(unitOfWork, mapper, logger, cache)
     { }
 
     [HttpPost]
@@ -38,7 +38,7 @@ public class AchievementController : BaseController
         }
         catch (ApplicationException)
         {
-            _logger.LogError("Error occurred while trying to add a new achievement to the database");
+            _logger.Error("Error occurred while trying to add a new achievement to the database");
 
             return StatusCode(StatusCodes.Status500InternalServerError, "Failed to create a new achievement");
         }
@@ -63,7 +63,7 @@ public class AchievementController : BaseController
         }
         catch (ApplicationException)
         {
-            _logger.LogError("Error occurred while trying to retrieve an achievement from the database");
+            _logger.Error("Error occurred while trying to retrieve an achievement from the database");
             return StatusCode(StatusCodes.Status500InternalServerError, $"Failed to retrieve achievement with id {id}");
         }
     }
@@ -95,7 +95,7 @@ public class AchievementController : BaseController
         }
         catch (ApplicationException)
         {
-            _logger.LogError("Error occurred while retrieving all achievements");
+            _logger.Error("Error occurred while retrieving all achievements");
 
             return StatusCode(StatusCodes.Status500InternalServerError, "Failed to retrieve achievements");
         }
@@ -129,7 +129,7 @@ public class AchievementController : BaseController
         }
         catch (ApplicationException)
         {
-            _logger.LogError("Error occurred while retrieving achievements for a driver");
+            _logger.Error("Error occurred while retrieving achievements for a driver");
 
             return StatusCode(StatusCodes.Status500InternalServerError, "Failed to retrieve driver's achievements");
         }
@@ -153,11 +153,13 @@ public class AchievementController : BaseController
 
             if (achievement is null) return NotFound();
 
+            await _unitOfWork.SaveChangesAsync();
+
             return NoContent();
         }
         catch
         {
-            _logger.LogError("Error occurred while updating achievement");
+            _logger.Error("Error occurred while updating achievement");
 
             return StatusCode(StatusCodes.Status500InternalServerError, "Failed to update an achievement");
         }
@@ -179,7 +181,7 @@ public class AchievementController : BaseController
         }
         catch (ApplicationException)
         {
-            _logger.LogError("Error occurred while deleting an achievement");
+            _logger.Error("Error occurred while deleting an achievement");
 
             return StatusCode(StatusCodes.Status500InternalServerError, "Failed to delete an achievement");
         }

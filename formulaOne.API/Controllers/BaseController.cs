@@ -11,11 +11,11 @@ public class BaseController : ControllerBase
     protected readonly IUnitOfWork _unitOfWork;
     protected readonly IMapper _mapper;
 
-    protected readonly ILogger _logger;
+    protected readonly Serilog.ILogger _logger;
 
     protected readonly IDistributedCache _distributedCache;
 
-    public BaseController(IUnitOfWork unitOfWork, IMapper mapper, ILogger logger, IDistributedCache distributedCache)
+    public BaseController(IUnitOfWork unitOfWork, IMapper mapper, Serilog.ILogger logger, IDistributedCache distributedCache)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
