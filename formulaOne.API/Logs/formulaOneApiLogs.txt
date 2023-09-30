@@ -115,3 +115,30 @@
 2023-09-30 02:42:20.222 +00:00 [INF] Application is shutting down...
 2023-09-30 02:42:20.265 +00:00 [DBG] Hosting stopping
 2023-09-30 02:42:20.460 +00:00 [DBG] Hosting stopped
+2023-09-30 02:58:28.404 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-30 02:58:28.779 +00:00 [DBG] Hosting starting
+2023-09-30 02:58:29.542 +00:00 [INF] Now listening on: http://localhost:5176
+2023-09-30 02:58:29.550 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-09-30 02:58:29.551 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-30 02:58:29.565 +00:00 [INF] Hosting environment: Development
+2023-09-30 02:58:29.566 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-09-30 02:58:29.567 +00:00 [DBG] Hosting started
+2023-09-30 02:59:03.528 +00:00 [DBG] Connection id "0HMU1C4Q3J5N8" accepted.
+2023-09-30 02:59:03.532 +00:00 [DBG] Connection id "0HMU1C4Q3J5N8" started.
+2023-09-30 02:59:03.855 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/index.html - -
+2023-09-30 02:59:03.887 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-30 02:59:04.394 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-09-30 02:59:04.406 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 02:59:05.707 +00:00 [DBG] Connection id "0HMU1C4Q3J5N8" completed keep alive response.
+2023-09-30 02:59:05.715 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/index.html - - - 200 - text/html;charset=utf-8 1898.1510ms
+2023-09-30 02:59:08.507 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - -
+2023-09-30 02:59:08.512 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-30 02:59:08.514 +00:00 [DBG] Request did not match any endpoints
+2023-09-30 02:59:10.255 +00:00 [DBG] Connection id "0HMU1C4Q3J5N8" completed keep alive response.
+2023-09-30 02:59:10.258 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1750.2400ms
+2023-09-30 03:01:21.238 +00:00 [DBG] Connection id "0HMU1C4Q3J5N8" disconnecting.
+2023-09-30 03:01:21.244 +00:00 [DBG] Connection id "0HMU1C4Q3J5N8" stopped.
+2023-09-30 03:01:21.254 +00:00 [DBG] Connection id "0HMU1C4Q3J5N8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-30 03:02:07.732 +00:00 [INF] Application is shutting down...
+2023-09-30 03:02:07.747 +00:00 [DBG] Hosting stopping
+2023-09-30 03:02:07.860 +00:00 [DBG] Hosting stopped

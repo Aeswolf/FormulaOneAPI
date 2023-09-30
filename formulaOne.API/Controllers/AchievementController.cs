@@ -163,5 +163,25 @@ public class AchievementController : BaseController
         }
     }
 
+    [HttpDelete("{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> DeleteAchievementAsync(Guid id)
+    {
+        try
+        {
+            bool isAchievementDeleted = await _unitOfWork.achievementRepository.DeleteByIdAsync(id);
 
+            if (!isAchievementDeleted) return NotFound();
+
+            return NoContent();
+        }
+        catch (ApplicationException)
+        {
+            _logger.LogError("Error occurred while deleting an achievement");
+
+            return StatusCode(StatusCodes.Status500InternalServerError, "Failed to delete an achievement");
+        }
+    }
 }
