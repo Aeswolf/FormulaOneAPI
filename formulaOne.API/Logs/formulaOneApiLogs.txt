@@ -3637,3 +3637,1104 @@ ORDER BY d."CreatedAt", d."Id"
 2023-10-01 17:05:03.276 +00:00 [DBG] Connection id "0HMU2K0F272BH" disconnecting.
 2023-10-01 17:05:03.284 +00:00 [DBG] Connection id "0HMU2K0F272BH" stopped.
 2023-10-01 17:05:03.291 +00:00 [DBG] Connection id "0HMU2K0F272BH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-01 17:24:17.338 +00:00 [INF] Application is shutting down...
+2023-10-01 17:24:17.349 +00:00 [DBG] Hosting stopping
+2023-10-01 17:24:17.523 +00:00 [DBG] Hosting stopped
+2023-10-01 17:24:53.605 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-01 17:24:53.812 +00:00 [DBG] Hosting starting
+2023-10-01 17:24:54.015 +00:00 [INF] Now listening on: http://localhost:5176
+2023-10-01 17:24:54.015 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-10-01 17:24:54.016 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 17:24:54.017 +00:00 [INF] Hosting environment: Development
+2023-10-01 17:24:54.018 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-10-01 17:24:54.018 +00:00 [DBG] Hosting started
+2023-10-01 17:24:59.565 +00:00 [DBG] Connection id "0HMU2KDBDI7R9" accepted.
+2023-10-01 17:24:59.569 +00:00 [DBG] Connection id "0HMU2KDBDI7R9" started.
+2023-10-01 17:24:59.703 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/index.html - -
+2023-10-01 17:24:59.720 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-01 17:24:59.832 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-01 17:24:59.833 +00:00 [DBG] Request did not match any endpoints
+2023-10-01 17:25:00.356 +00:00 [DBG] Connection id "0HMU2KDBDI7R9" completed keep alive response.
+2023-10-01 17:25:00.363 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/index.html - - - 200 - text/html;charset=utf-8 667.0886ms
+2023-10-01 17:25:01.874 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - -
+2023-10-01 17:25:01.875 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-01 17:25:01.875 +00:00 [DBG] Request did not match any endpoints
+2023-10-01 17:25:02.520 +00:00 [DBG] Connection id "0HMU2KDBDI7R9" completed keep alive response.
+2023-10-01 17:25:02.525 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 650.9627ms
+2023-10-01 17:25:13.861 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/api/driver - -
+2023-10-01 17:25:13.910 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver'
+2023-10-01 17:25:13.924 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)' with route pattern 'api/driver' is valid for the request path '/api/driver'
+2023-10-01 17:25:13.932 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:25:13.961 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:25:13.968 +00:00 [WRN] Failed to determine the https port for redirect.
+2023-10-01 17:25:13.981 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:25:14.094 +00:00 [INF] Route matched with {action = "GetDrivers", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[formulaOne.API.DTOs.Responses.DriverResponseDto]]] GetDriversAsync() on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:25:14.103 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:25:14.104 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:25:14.106 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:25:14.106 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:25:14.107 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:25:14.120 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:25:14.585 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-01 17:25:17.695 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:25:18.272 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:25:19.316 +00:00 [DBG] Compiling query expression: 
+'DbSet<Driver>()
+    .Where(d => d.IsDeleted == False)
+    .Include(d => d.Achievements)
+    .AsSplitQuery()
+    .OrderBy(d => d.CreatedAt)'
+2023-10-01 17:25:19.582 +00:00 [DBG] Including navigation: 'Driver.Achievements'.
+2023-10-01 17:25:20.721 +00:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<Driver>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Driver.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Driver.CreatedAt (DateTime) Required, 1], [Property: Driver.DateOfBirth (DateOnly) Required, 2], [Property: Driver.DeletedAt (DateTime) Required, 3], [Property: Driver.DriverNumber (int) Required, 4], [Property: Driver.FirstName (string) Required MaxLength(50), 5], [Property: Driver.IsDeleted (bool) Required, 6], [Property: Driver.LastName (string) Required MaxLength(50), 7], [Property: Driver.UpdatedAt (DateTime) Required, 8] }
+            1 -> 0
+        SELECT d.Id, d.CreatedAt, d.DateOfBirth, d.DeletedAt, d.DriverNumber, d.FirstName, d.IsDeleted, d.LastName, d.UpdatedAt
+        FROM Drivers AS d
+        WHERE d.IsDeleted == FALSE
+        ORDER BY d.CreatedAt ASC, d.Id ASC), 
+    ReaderColumn[] { ReaderColumn<Guid>, ReaderColumn<DateTime>, ReaderColumn<object>, ReaderColumn<DateTime>, ReaderColumn<int>, ReaderColumn<object>, ReaderColumn<bool>, ReaderColumn<object>, ReaderColumn<DateTime> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, Driver>, 
+    null, 
+    Func<QueryContext, IExecutionStrategy, SplitQueryResultCoordinator, Task>, 
+    formulaOne.DataService.Context.APIDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-10-01 17:25:20.863 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:25:20.870 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:25:21.096 +00:00 [DBG] Created DbConnection. (203ms).
+2023-10-01 17:25:21.184 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (267ms).
+2023-10-01 17:25:21.208 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (344ms).
+2023-10-01 17:25:21.267 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:25:23.153 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:25:23.187 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:25:23.365 +00:00 [INF] Executed DbCommand (170ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:25:23.718 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:25:23.918 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:25:23.918 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:25:23.919 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-10-01 17:25:23.920 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:25:23.952 +00:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:25:24.040 +00:00 [DBG] Context 'APIDbContext' started tracking 'Achievement' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:25:24.121 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:25:24.144 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 603ms reading results.
+2023-10-01 17:25:24.155 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:25:24.156 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 201ms reading results.
+2023-10-01 17:25:24.162 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:25:24.185 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (24ms).
+2023-10-01 17:25:24.498 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:25:24.508 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-10-01 17:25:24.512 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-10-01 17:25:24.514 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-01 17:25:24.514 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-01 17:25:24.518 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-01 17:25:24.519 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[formulaOne.API.DTOs.Responses.DriverResponseDto, formulaOne.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-01 17:25:24.570 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API) in 10448.3008ms
+2023-10-01 17:25:24.573 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:25:24.583 +00:00 [DBG] Connection id "0HMU2KDBDI7R9" completed keep alive response.
+2023-10-01 17:25:24.596 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:25:24.612 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:25:24.622 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (8ms).
+2023-10-01 17:25:24.625 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/api/driver - - - 200 - application/json;+charset=utf-8 10763.8296ms
+2023-10-01 17:27:35.042 +00:00 [DBG] Connection id "0HMU2KDBDI7R9" disconnecting.
+2023-10-01 17:27:35.050 +00:00 [DBG] Connection id "0HMU2KDBDI7R9" stopped.
+2023-10-01 17:27:35.053 +00:00 [DBG] Connection id "0HMU2KDBDI7R9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-01 17:27:45.803 +00:00 [DBG] Connection id "0HMU2KDBDI7RA" accepted.
+2023-10-01 17:27:45.803 +00:00 [DBG] Connection id "0HMU2KDBDI7RA" started.
+2023-10-01 17:27:45.813 +00:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 151
+2023-10-01 17:27:45.817 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:27:45.818 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)' with route pattern 'api/driver/{id:guid}' is valid for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:27:45.824 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:27:45.825 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:27:45.827 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:27:45.882 +00:00 [INF] Route matched with {action = "UpdateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateDriverAsync(System.Guid, formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto) on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:27:45.882 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:27:45.882 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:27:45.882 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:27:45.882 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:27:45.883 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:27:45.883 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:27:46.161 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:27:46.162 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:27:46.210 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:27:46.219 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2023-10-01 17:27:46.223 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:27:46.223 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:27:46.224 +00:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:27:46.230 +00:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2023-10-01 17:27:46.237 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:27:46.239 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' using the name '' in request data ...
+2023-10-01 17:27:46.243 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-01 17:27:46.257 +00:00 [DBG] Connection id "0HMU2KDBDI7RA", Request id "0HMU2KDBDI7RA:00000001": started reading request body.
+2023-10-01 17:27:46.258 +00:00 [DBG] Connection id "0HMU2KDBDI7RA", Request id "0HMU2KDBDI7RA:00000001": done reading request body.
+2023-10-01 17:27:46.290 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'
+2023-10-01 17:27:46.291 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:27:46.291 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:27:46.292 +00:00 [DBG] Attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:27:46.328 +00:00 [DBG] Done attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:27:46.367 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API) in 483.9679ms
+2023-10-01 17:27:46.369 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:27:46.371 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+UpdateDriverDto -> Driver
+formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto -> formulaOne.Entities.DbSets.Driver
+
+Type Map configuration:
+UpdateDriverDto -> Driver
+formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto -> formulaOne.Entities.DbSets.Driver
+
+Destination Member:
+DateOfBirth
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+String -> DateOnly
+System.String -> System.DateOnly
+
+Destination Member:
+DateOfBirth
+
+   at lambda_method154(Closure, String, DateOnly, ResolutionContext)
+   at lambda_method153(Closure, Object, Driver, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method153(Closure, Object, Driver, ResolutionContext)
+   at formulaOne.API.Controllers.DriverController.UpdateDriverAsync(Guid id, UpdateDriverDto updateDriverDto) in /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API/Controllers/DriverController.cs:line 116
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-01 17:27:46.471 +00:00 [DBG] Connection id "0HMU2KDBDI7RA" completed keep alive response.
+2023-10-01 17:27:46.472 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:27:46.473 +00:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 151 - 500 - text/plain;+charset=utf-8 659.8811ms
+2023-10-01 17:29:57.166 +00:00 [DBG] Connection id "0HMU2KDBDI7RA" disconnecting.
+2023-10-01 17:29:57.170 +00:00 [DBG] Connection id "0HMU2KDBDI7RA" stopped.
+2023-10-01 17:29:57.177 +00:00 [DBG] Connection id "0HMU2KDBDI7RA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-01 17:30:07.792 +00:00 [INF] Application is shutting down...
+2023-10-01 17:30:07.798 +00:00 [DBG] Hosting stopping
+2023-10-01 17:30:07.829 +00:00 [DBG] Hosting stopped
+2023-10-01 17:30:46.080 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-01 17:30:46.304 +00:00 [DBG] Hosting starting
+2023-10-01 17:30:46.524 +00:00 [INF] Now listening on: http://localhost:5176
+2023-10-01 17:30:46.525 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-10-01 17:30:46.526 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 17:30:46.539 +00:00 [INF] Hosting environment: Development
+2023-10-01 17:30:46.545 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-10-01 17:30:46.546 +00:00 [DBG] Hosting started
+2023-10-01 17:30:49.391 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" accepted.
+2023-10-01 17:30:49.403 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" started.
+2023-10-01 17:30:49.627 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/index.html - -
+2023-10-01 17:30:49.643 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-01 17:30:49.756 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-01 17:30:49.758 +00:00 [DBG] Request did not match any endpoints
+2023-10-01 17:30:50.243 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" completed keep alive response.
+2023-10-01 17:30:50.250 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/index.html - - - 200 - text/html;charset=utf-8 632.1418ms
+2023-10-01 17:30:51.664 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - -
+2023-10-01 17:30:51.665 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-01 17:30:51.666 +00:00 [DBG] Request did not match any endpoints
+2023-10-01 17:30:52.187 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" completed keep alive response.
+2023-10-01 17:30:52.188 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 525.2438ms
+2023-10-01 17:31:00.760 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/api/driver - -
+2023-10-01 17:31:00.815 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver'
+2023-10-01 17:31:00.832 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)' with route pattern 'api/driver' is valid for the request path '/api/driver'
+2023-10-01 17:31:00.834 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:31:00.847 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:31:00.856 +00:00 [WRN] Failed to determine the https port for redirect.
+2023-10-01 17:31:00.869 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:31:00.933 +00:00 [INF] Route matched with {action = "GetDrivers", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[formulaOne.API.DTOs.Responses.DriverResponseDto]]] GetDriversAsync() on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:31:00.945 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:31:00.946 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:31:00.948 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:31:00.949 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:31:00.950 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:31:00.955 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:31:01.418 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-01 17:31:04.489 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:31:05.135 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:31:06.262 +00:00 [DBG] Compiling query expression: 
+'DbSet<Driver>()
+    .Where(d => d.IsDeleted == False)
+    .Include(d => d.Achievements)
+    .AsSplitQuery()
+    .OrderBy(d => d.CreatedAt)'
+2023-10-01 17:31:06.570 +00:00 [DBG] Including navigation: 'Driver.Achievements'.
+2023-10-01 17:31:07.658 +00:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<Driver>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Driver.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Driver.CreatedAt (DateTime) Required, 1], [Property: Driver.DateOfBirth (DateOnly) Required, 2], [Property: Driver.DeletedAt (DateTime) Required, 3], [Property: Driver.DriverNumber (int) Required, 4], [Property: Driver.FirstName (string) Required MaxLength(50), 5], [Property: Driver.IsDeleted (bool) Required, 6], [Property: Driver.LastName (string) Required MaxLength(50), 7], [Property: Driver.UpdatedAt (DateTime) Required, 8] }
+            1 -> 0
+        SELECT d.Id, d.CreatedAt, d.DateOfBirth, d.DeletedAt, d.DriverNumber, d.FirstName, d.IsDeleted, d.LastName, d.UpdatedAt
+        FROM Drivers AS d
+        WHERE d.IsDeleted == FALSE
+        ORDER BY d.CreatedAt ASC, d.Id ASC), 
+    ReaderColumn[] { ReaderColumn<Guid>, ReaderColumn<DateTime>, ReaderColumn<object>, ReaderColumn<DateTime>, ReaderColumn<int>, ReaderColumn<object>, ReaderColumn<bool>, ReaderColumn<object>, ReaderColumn<DateTime> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, Driver>, 
+    null, 
+    Func<QueryContext, IExecutionStrategy, SplitQueryResultCoordinator, Task>, 
+    formulaOne.DataService.Context.APIDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-10-01 17:31:07.807 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:31:07.816 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:31:07.969 +00:00 [DBG] Created DbConnection. (141ms).
+2023-10-01 17:31:07.999 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (181ms).
+2023-10-01 17:31:08.005 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (205ms).
+2023-10-01 17:31:08.023 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:31:10.763 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:31:10.798 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:31:10.935 +00:00 [INF] Executed DbCommand (134ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:31:11.252 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:31:11.429 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:31:11.429 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:31:11.430 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-10-01 17:31:11.431 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:31:11.452 +00:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:31:11.545 +00:00 [DBG] Context 'APIDbContext' started tracking 'Achievement' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:31:11.630 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:31:11.655 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 533ms reading results.
+2023-10-01 17:31:11.668 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:31:11.669 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 213ms reading results.
+2023-10-01 17:31:11.673 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:31:11.696 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (21ms).
+2023-10-01 17:31:11.950 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:31:11.958 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-10-01 17:31:11.963 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-10-01 17:31:11.964 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-01 17:31:11.965 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-01 17:31:11.970 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-01 17:31:11.972 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[formulaOne.API.DTOs.Responses.DriverResponseDto, formulaOne.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-01 17:31:12.022 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API) in 11054.0055ms
+2023-10-01 17:31:12.025 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:31:12.036 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" completed keep alive response.
+2023-10-01 17:31:12.051 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:31:12.079 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:31:12.087 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (10ms).
+2023-10-01 17:31:12.092 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/api/driver - - - 200 - application/json;+charset=utf-8 11332.0533ms
+2023-10-01 17:32:17.334 +00:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 150
+2023-10-01 17:32:17.338 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:32:17.341 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)' with route pattern 'api/driver/{id:guid}' is valid for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:32:17.342 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:32:17.343 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:32:17.347 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:32:17.391 +00:00 [INF] Route matched with {action = "UpdateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateDriverAsync(System.Guid, formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto) on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:32:17.391 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:32:17.391 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:32:17.392 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:32:17.392 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:32:17.392 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:32:17.392 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:32:17.641 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:32:17.641 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:32:17.662 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:32:17.695 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2023-10-01 17:32:17.700 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:32:17.701 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:32:17.701 +00:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:32:17.710 +00:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2023-10-01 17:32:17.717 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:32:17.719 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' using the name '' in request data ...
+2023-10-01 17:32:17.723 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-01 17:32:17.737 +00:00 [DBG] Connection id "0HMU2KGJLOLLU", Request id "0HMU2KGJLOLLU:00000004": started reading request body.
+2023-10-01 17:32:17.739 +00:00 [DBG] Connection id "0HMU2KGJLOLLU", Request id "0HMU2KGJLOLLU:00000004": done reading request body.
+2023-10-01 17:32:17.774 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'
+2023-10-01 17:32:17.775 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:32:17.775 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:32:17.775 +00:00 [DBG] Attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:32:17.809 +00:00 [DBG] Done attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:32:17.856 +00:00 [DBG] Compiling query expression: 
+'DbSet<Driver>()
+    .FirstOrDefault(d => d.Id == __id_0 && d.IsDeleted == False)'
+2023-10-01 17:32:17.887 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Driver>(
+    asyncEnumerable: new SingleQueryingEnumerable<Driver>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Driver.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Driver.CreatedAt (DateTime) Required, 1], [Property: Driver.DateOfBirth (DateOnly) Required, 2], [Property: Driver.DeletedAt (DateTime) Required, 3], [Property: Driver.DriverNumber (int) Required, 4], [Property: Driver.FirstName (string) Required MaxLength(50), 5], [Property: Driver.IsDeleted (bool) Required, 6], [Property: Driver.LastName (string) Required MaxLength(50), 7], [Property: Driver.UpdatedAt (DateTime) Required, 8] }
+            SELECT TOP(1) d.Id, d.CreatedAt, d.DateOfBirth, d.DeletedAt, d.DriverNumber, d.FirstName, d.IsDeleted, d.LastName, d.UpdatedAt
+            FROM Drivers AS d
+            WHERE (d.Id == @__id_0) && (d.IsDeleted == FALSE)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Driver>, 
+        formulaOne.DataService.Context.APIDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-10-01 17:32:17.918 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:32:17.919 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:32:17.920 +00:00 [DBG] Created DbConnection. (0ms).
+2023-10-01 17:32:17.920 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-10-01 17:32:17.929 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (11ms).
+2023-10-01 17:32:17.930 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:32:17.932 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:32:17.941 +00:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE d."Id" = @__id_0 AND NOT (d."IsDeleted")
+LIMIT 1
+2023-10-01 17:32:17.979 +00:00 [INF] Executed DbCommand (46ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE d."Id" = @__id_0 AND NOT (d."IsDeleted")
+LIMIT 1
+2023-10-01 17:32:17.995 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:32:18.000 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:32:18.004 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 23ms reading results.
+2023-10-01 17:32:18.007 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:32:18.008 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (1ms).
+2023-10-01 17:32:18.015 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-10-01 17:32:18.017 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API) in 624.5879ms
+2023-10-01 17:32:18.017 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:32:18.018 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" completed keep alive response.
+2023-10-01 17:32:18.021 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:32:18.027 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:32:18.028 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:32:18.029 +00:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 150 - 204 - - 694.8590ms
+2023-10-01 17:32:28.641 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/api/driver - -
+2023-10-01 17:32:28.642 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver'
+2023-10-01 17:32:28.642 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)' with route pattern 'api/driver' is valid for the request path '/api/driver'
+2023-10-01 17:32:28.642 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:32:28.656 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:32:28.656 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:32:28.657 +00:00 [INF] Route matched with {action = "GetDrivers", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[formulaOne.API.DTOs.Responses.DriverResponseDto]]] GetDriversAsync() on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:32:28.657 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:32:28.657 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:32:28.657 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:32:28.658 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:32:28.658 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:32:28.658 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:32:28.750 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:32:28.756 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:32:28.815 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:32:28.815 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:32:28.816 +00:00 [DBG] Created DbConnection. (0ms).
+2023-10-01 17:32:28.816 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:32:28.816 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-10-01 17:32:28.816 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:32:28.817 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:32:28.817 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:32:28.820 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:32:28.821 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:32:28.822 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:32:28.828 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2023-10-01 17:32:28.829 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2023-10-01 17:32:28.829 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:32:28.836 +00:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:32:28.838 +00:00 [DBG] Context 'APIDbContext' started tracking 'Achievement' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:32:28.844 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:32:28.845 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 24ms reading results.
+2023-10-01 17:32:28.845 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:32:28.845 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 9ms reading results.
+2023-10-01 17:32:28.845 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:32:28.846 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:32:28.865 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:32:28.868 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-10-01 17:32:28.868 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-10-01 17:32:28.868 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-01 17:32:28.868 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-01 17:32:28.869 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-01 17:32:28.869 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[formulaOne.API.DTOs.Responses.DriverResponseDto, formulaOne.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-01 17:32:28.878 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API) in 220.5034ms
+2023-10-01 17:32:28.879 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:32:28.880 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" completed keep alive response.
+2023-10-01 17:32:28.880 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:32:28.880 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:32:28.880 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:32:28.880 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/api/driver - - - 200 - application/json;+charset=utf-8 238.8335ms
+2023-10-01 17:34:08.527 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/api/driver - -
+2023-10-01 17:34:08.529 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver'
+2023-10-01 17:34:08.530 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)' with route pattern 'api/driver' is valid for the request path '/api/driver'
+2023-10-01 17:34:08.530 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:34:08.532 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:34:08.534 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:34:08.539 +00:00 [INF] Route matched with {action = "GetDrivers", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[formulaOne.API.DTOs.Responses.DriverResponseDto]]] GetDriversAsync() on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:34:08.540 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:34:08.540 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:34:08.540 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:34:08.540 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:34:08.541 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:34:08.544 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:34:08.585 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:34:08.585 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:34:08.608 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:34:08.609 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:34:08.609 +00:00 [DBG] Created DbConnection. (0ms).
+2023-10-01 17:34:08.609 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:34:08.609 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:34:08.609 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:34:08.611 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:34:08.611 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:34:09.001 +00:00 [INF] Executed DbCommand (390ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:34:09.002 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:34:09.003 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:34:09.004 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:34:09.004 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-10-01 17:34:09.005 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:34:09.010 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:34:09.015 +00:00 [DBG] Context 'APIDbContext' started tracking 'Achievement' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:34:09.016 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:34:09.017 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 15ms reading results.
+2023-10-01 17:34:09.018 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:34:09.018 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 6ms reading results.
+2023-10-01 17:34:09.019 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:34:09.020 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:34:09.049 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:34:09.052 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-10-01 17:34:09.053 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-10-01 17:34:09.054 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-01 17:34:09.054 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-01 17:34:09.055 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-01 17:34:09.055 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[formulaOne.API.DTOs.Responses.DriverResponseDto, formulaOne.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-01 17:34:09.057 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API) in 516.2841ms
+2023-10-01 17:34:09.065 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:34:09.072 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" completed keep alive response.
+2023-10-01 17:34:09.073 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:34:09.074 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:34:09.074 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:34:09.076 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/api/driver - - - 200 - application/json;+charset=utf-8 548.1484ms
+2023-10-01 17:34:29.697 +00:00 [INF] Application is shutting down...
+2023-10-01 17:34:29.702 +00:00 [DBG] Hosting stopping
+2023-10-01 17:34:29.789 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" disconnecting.
+2023-10-01 17:34:29.795 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" stopped.
+2023-10-01 17:34:29.797 +00:00 [DBG] Connection id "0HMU2KGJLOLLU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-01 17:34:29.813 +00:00 [DBG] Hosting stopped
+2023-10-01 17:35:00.509 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-01 17:35:00.746 +00:00 [DBG] Hosting starting
+2023-10-01 17:35:00.961 +00:00 [INF] Now listening on: http://localhost:5176
+2023-10-01 17:35:00.964 +00:00 [DBG] Loaded hosting startup assembly formulaOne.API
+2023-10-01 17:35:00.966 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-01 17:35:00.967 +00:00 [INF] Hosting environment: Development
+2023-10-01 17:35:00.968 +00:00 [INF] Content root path: /home/aeswolf/Documents/c#-projects/src/github.com/Aeswolf/personal-works/apis/formulaOne-api/formulaOne.API
+2023-10-01 17:35:00.969 +00:00 [DBG] Hosting started
+2023-10-01 17:35:07.556 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" accepted.
+2023-10-01 17:35:07.560 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" started.
+2023-10-01 17:35:07.861 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/index.html - -
+2023-10-01 17:35:07.897 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-01 17:35:08.155 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-01 17:35:08.156 +00:00 [DBG] Request did not match any endpoints
+2023-10-01 17:35:08.630 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:35:08.636 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/index.html - - - 200 - text/html;charset=utf-8 786.6052ms
+2023-10-01 17:35:09.460 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - -
+2023-10-01 17:35:09.464 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-01 17:35:09.465 +00:00 [DBG] Request did not match any endpoints
+2023-10-01 17:35:10.266 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:35:10.269 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 808.1953ms
+2023-10-01 17:35:18.012 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/index.html - -
+2023-10-01 17:35:18.012 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-01 17:35:18.012 +00:00 [DBG] Request did not match any endpoints
+2023-10-01 17:35:18.027 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:35:18.027 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/index.html - - - 200 - text/html;charset=utf-8 15.2153ms
+2023-10-01 17:35:18.503 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - -
+2023-10-01 17:35:18.503 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-01 17:35:18.503 +00:00 [DBG] Request did not match any endpoints
+2023-10-01 17:35:18.598 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:35:18.599 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.9440ms
+2023-10-01 17:35:29.609 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/api/driver - -
+2023-10-01 17:35:29.642 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver'
+2023-10-01 17:35:29.664 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)' with route pattern 'api/driver' is valid for the request path '/api/driver'
+2023-10-01 17:35:29.666 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:35:29.672 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:35:29.680 +00:00 [WRN] Failed to determine the https port for redirect.
+2023-10-01 17:35:29.700 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:35:29.816 +00:00 [INF] Route matched with {action = "GetDrivers", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[formulaOne.API.DTOs.Responses.DriverResponseDto]]] GetDriversAsync() on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:35:29.852 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:35:29.856 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:35:29.857 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:35:29.858 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:35:29.860 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:35:29.873 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:35:30.475 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-01 17:35:33.372 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:35:33.977 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:35:35.017 +00:00 [DBG] Compiling query expression: 
+'DbSet<Driver>()
+    .Where(d => d.IsDeleted == False)
+    .Include(d => d.Achievements)
+    .AsSplitQuery()
+    .OrderBy(d => d.CreatedAt)'
+2023-10-01 17:35:35.293 +00:00 [DBG] Including navigation: 'Driver.Achievements'.
+2023-10-01 17:35:36.363 +00:00 [DBG] Generated query execution expression: 
+'queryContext => new SplitQueryingEnumerable<Driver>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Driver.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Driver.CreatedAt (DateTime) Required, 1], [Property: Driver.DateOfBirth (DateOnly) Required, 2], [Property: Driver.DeletedAt (DateTime) Required, 3], [Property: Driver.DriverNumber (int) Required, 4], [Property: Driver.FirstName (string) Required MaxLength(50), 5], [Property: Driver.IsDeleted (bool) Required, 6], [Property: Driver.LastName (string) Required MaxLength(50), 7], [Property: Driver.UpdatedAt (DateTime) Required, 8] }
+            1 -> 0
+        SELECT d.Id, d.CreatedAt, d.DateOfBirth, d.DeletedAt, d.DriverNumber, d.FirstName, d.IsDeleted, d.LastName, d.UpdatedAt
+        FROM Drivers AS d
+        WHERE d.IsDeleted == FALSE
+        ORDER BY d.CreatedAt ASC, d.Id ASC), 
+    ReaderColumn[] { ReaderColumn<Guid>, ReaderColumn<DateTime>, ReaderColumn<object>, ReaderColumn<DateTime>, ReaderColumn<int>, ReaderColumn<object>, ReaderColumn<bool>, ReaderColumn<object>, ReaderColumn<DateTime> }, 
+    Func<QueryContext, DbDataReader, ResultContext, SplitQueryResultCoordinator, Driver>, 
+    null, 
+    Func<QueryContext, IExecutionStrategy, SplitQueryResultCoordinator, Task>, 
+    formulaOne.DataService.Context.APIDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-10-01 17:35:36.506 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:35:36.515 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:35:36.718 +00:00 [DBG] Created DbConnection. (189ms).
+2023-10-01 17:35:36.744 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (226ms).
+2023-10-01 17:35:36.750 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (247ms).
+2023-10-01 17:35:36.769 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:35:38.390 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:35:38.424 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:35:38.602 +00:00 [INF] Executed DbCommand (173ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:35:38.891 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:35:39.082 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:35:39.083 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:35:39.086 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2023-10-01 17:35:39.087 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:35:39.106 +00:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:35:39.204 +00:00 [DBG] Context 'APIDbContext' started tracking 'Achievement' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:35:39.288 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:35:39.309 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 549ms reading results.
+2023-10-01 17:35:39.319 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:35:39.319 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 210ms reading results.
+2023-10-01 17:35:39.323 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:35:39.346 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (20ms).
+2023-10-01 17:35:39.592 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:35:39.603 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-10-01 17:35:39.606 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-10-01 17:35:39.607 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-01 17:35:39.608 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-01 17:35:39.611 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-01 17:35:39.613 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[formulaOne.API.DTOs.Responses.DriverResponseDto, formulaOne.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-01 17:35:39.691 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API) in 9799.5345ms
+2023-10-01 17:35:39.697 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:35:39.713 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:35:39.724 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:35:39.743 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:35:39.750 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (10ms).
+2023-10-01 17:35:39.753 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/api/driver - - - 200 - application/json;+charset=utf-8 10144.7199ms
+2023-10-01 17:36:42.553 +00:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 152
+2023-10-01 17:36:42.556 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:36:42.558 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)' with route pattern 'api/driver/{id:guid}' is valid for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:36:42.563 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:36:42.564 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:36:42.566 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:36:42.618 +00:00 [INF] Route matched with {action = "UpdateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateDriverAsync(System.Guid, formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto) on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:36:42.619 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:36:42.619 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:36:42.620 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:36:42.620 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:36:42.621 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:36:42.621 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:36:42.888 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:36:42.889 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:36:42.910 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:36:42.916 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2023-10-01 17:36:42.921 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:36:42.921 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:36:42.922 +00:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:36:42.926 +00:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2023-10-01 17:36:42.932 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:36:42.935 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' using the name '' in request data ...
+2023-10-01 17:36:42.938 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-01 17:36:43.002 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8", Request id "0HMU2KJ0JQDG8:00000006": started reading request body.
+2023-10-01 17:36:43.003 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8", Request id "0HMU2KJ0JQDG8:00000006": done reading request body.
+2023-10-01 17:36:43.033 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'
+2023-10-01 17:36:43.035 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:36:43.035 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:36:43.035 +00:00 [DBG] Attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:36:43.066 +00:00 [DBG] Done attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:36:43.115 +00:00 [DBG] Compiling query expression: 
+'DbSet<Driver>()
+    .FirstOrDefault(d => d.Id == __id_0 && d.IsDeleted == False)'
+2023-10-01 17:36:43.148 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Driver>(
+    asyncEnumerable: new SingleQueryingEnumerable<Driver>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Driver.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Driver.CreatedAt (DateTime) Required, 1], [Property: Driver.DateOfBirth (DateOnly) Required, 2], [Property: Driver.DeletedAt (DateTime) Required, 3], [Property: Driver.DriverNumber (int) Required, 4], [Property: Driver.FirstName (string) Required MaxLength(50), 5], [Property: Driver.IsDeleted (bool) Required, 6], [Property: Driver.LastName (string) Required MaxLength(50), 7], [Property: Driver.UpdatedAt (DateTime) Required, 8] }
+            SELECT TOP(1) d.Id, d.CreatedAt, d.DateOfBirth, d.DeletedAt, d.DriverNumber, d.FirstName, d.IsDeleted, d.LastName, d.UpdatedAt
+            FROM Drivers AS d
+            WHERE (d.Id == @__id_0) && (d.IsDeleted == FALSE)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Driver>, 
+        formulaOne.DataService.Context.APIDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-10-01 17:36:43.181 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:36:43.182 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:36:43.183 +00:00 [DBG] Created DbConnection. (0ms).
+2023-10-01 17:36:43.183 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2023-10-01 17:36:43.192 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (11ms).
+2023-10-01 17:36:43.193 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:36:43.195 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:36:43.205 +00:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE d."Id" = @__id_0 AND NOT (d."IsDeleted")
+LIMIT 1
+2023-10-01 17:36:43.237 +00:00 [INF] Executed DbCommand (41ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE d."Id" = @__id_0 AND NOT (d."IsDeleted")
+LIMIT 1
+2023-10-01 17:36:43.254 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:36:43.260 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:36:43.266 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 26ms reading results.
+2023-10-01 17:36:43.267 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:36:43.268 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:36:43.281 +00:00 [DBG] SaveChanges starting for 'APIDbContext'.
+2023-10-01 17:36:43.292 +00:00 [DBG] DetectChanges starting for 'APIDbContext'.
+2023-10-01 17:36:43.338 +00:00 [DBG] The unchanged property 'Driver.DateOfBirth' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-10-01 17:36:43.366 +00:00 [DBG] An entity of type 'Driver' tracked by 'APIDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:36:43.377 +00:00 [DBG] The unchanged property 'Driver.DriverNumber' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-10-01 17:36:43.385 +00:00 [DBG] The unchanged property 'Driver.FirstName' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-10-01 17:36:43.398 +00:00 [DBG] The unchanged property 'Driver.UpdatedAt' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-10-01 17:36:43.405 +00:00 [DBG] DetectChanges completed for 'APIDbContext'.
+2023-10-01 17:36:43.614 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:36:43.615 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:36:43.622 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:36:43.623 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:36:43.625 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2023-10-01 17:36:43.625 +00:00 [DBG] Executing DbCommand [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Date), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Drivers" SET "DateOfBirth" = @p0, "DriverNumber" = @p1, "FirstName" = @p2, "UpdatedAt" = @p3
+WHERE "Id" = @p4;
+2023-10-01 17:36:43.682 +00:00 [INF] Executed DbCommand (56ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Date), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Drivers" SET "DateOfBirth" = @p0, "DriverNumber" = @p1, "FirstName" = @p2, "UpdatedAt" = @p3
+WHERE "Id" = @p4;
+2023-10-01 17:36:43.699 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:36:43.700 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 17ms reading results.
+2023-10-01 17:36:43.706 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:36:43.706 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:36:43.728 +00:00 [DBG] An entity of type 'Driver' tracked by 'APIDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:36:43.737 +00:00 [DBG] SaveChanges completed for 'APIDbContext' with 1 entities written to the database.
+2023-10-01 17:36:43.744 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-10-01 17:36:43.745 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API) in 1124.0408ms
+2023-10-01 17:36:43.746 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:36:43.747 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:36:43.747 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:36:43.748 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:36:43.748 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:36:43.749 +00:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 152 - 204 - - 1196.2125ms
+2023-10-01 17:38:15.036 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/api/driver - -
+2023-10-01 17:38:15.036 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver'
+2023-10-01 17:38:15.036 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)' with route pattern 'api/driver' is valid for the request path '/api/driver'
+2023-10-01 17:38:15.036 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:38:15.037 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:38:15.037 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:38:15.037 +00:00 [INF] Route matched with {action = "GetDrivers", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[formulaOne.API.DTOs.Responses.DriverResponseDto]]] GetDriversAsync() on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:38:15.038 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:38:15.038 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:38:15.038 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:38:15.040 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:38:15.040 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:38:15.041 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:38:15.093 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:38:15.095 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:38:15.130 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:38:15.146 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:38:15.146 +00:00 [DBG] Created DbConnection. (0ms).
+2023-10-01 17:38:15.147 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (17ms).
+2023-10-01 17:38:15.147 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (17ms).
+2023-10-01 17:38:15.147 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:38:15.147 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:38:15.147 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:38:15.154 +00:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:38:15.155 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:38:15.157 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:38:15.157 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:38:15.158 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-10-01 17:38:15.159 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:38:15.161 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:38:15.163 +00:00 [DBG] Context 'APIDbContext' started tracking 'Achievement' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:38:15.165 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:38:15.165 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 10ms reading results.
+2023-10-01 17:38:15.166 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:38:15.167 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 4ms reading results.
+2023-10-01 17:38:15.167 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:38:15.168 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:38:15.175 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:38:15.179 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-10-01 17:38:15.180 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-10-01 17:38:15.180 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-01 17:38:15.181 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-01 17:38:15.181 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-01 17:38:15.182 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[formulaOne.API.DTOs.Responses.DriverResponseDto, formulaOne.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-01 17:38:15.184 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API) in 142.9398ms
+2023-10-01 17:38:15.184 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:38:15.185 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:38:15.186 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:38:15.186 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:38:15.187 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:38:15.187 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/api/driver - - - 200 - application/json;+charset=utf-8 151.6210ms
+2023-10-01 17:38:50.362 +00:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 152
+2023-10-01 17:38:50.362 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:38:50.363 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)' with route pattern 'api/driver/{id:guid}' is valid for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:38:50.363 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:38:50.363 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:38:50.363 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:38:50.364 +00:00 [INF] Route matched with {action = "UpdateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateDriverAsync(System.Guid, formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto) on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:38:50.364 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:38:50.364 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:38:50.364 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:38:50.364 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:38:50.364 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:38:50.364 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:38:50.366 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:38:50.366 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:38:50.370 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:38:50.372 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2023-10-01 17:38:50.436 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:38:50.437 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:38:50.437 +00:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:38:50.437 +00:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2023-10-01 17:38:50.437 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:38:50.437 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' using the name '' in request data ...
+2023-10-01 17:38:50.438 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-01 17:38:50.439 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8", Request id "0HMU2KJ0JQDG8:00000008": started reading request body.
+2023-10-01 17:38:50.439 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8", Request id "0HMU2KJ0JQDG8:00000008": done reading request body.
+2023-10-01 17:38:50.441 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'
+2023-10-01 17:38:50.442 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:38:50.443 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:38:50.443 +00:00 [DBG] Attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:38:50.456 +00:00 [DBG] Done attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:38:50.458 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:38:50.460 +00:00 [DBG] No information found on request to perform content negotiation.
+2023-10-01 17:38:50.460 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-01 17:38:50.461 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-01 17:38:50.462 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-10-01 17:38:50.462 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-10-01 17:38:50.470 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API) in 105.3937ms
+2023-10-01 17:38:50.470 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:38:50.473 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:38:50.474 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:38:50.474 +00:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 152 - 400 - text/plain;+charset=utf-8 112.3657ms
+2023-10-01 17:39:11.793 +00:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 132
+2023-10-01 17:39:11.794 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:39:11.794 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)' with route pattern 'api/driver/{id:guid}' is valid for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:39:11.794 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:39:11.794 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:39:11.794 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:39:11.794 +00:00 [INF] Route matched with {action = "UpdateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateDriverAsync(System.Guid, formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto) on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:39:11.795 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:39:11.795 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:39:11.795 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:39:11.795 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:39:11.795 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:39:11.795 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:39:11.796 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:39:11.796 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:39:11.797 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:39:11.797 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2023-10-01 17:39:11.797 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:39:11.797 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:39:11.797 +00:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:39:11.797 +00:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2023-10-01 17:39:11.797 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:39:11.797 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' using the name '' in request data ...
+2023-10-01 17:39:11.797 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-01 17:39:11.798 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8", Request id "0HMU2KJ0JQDG8:00000009": started reading request body.
+2023-10-01 17:39:11.798 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8", Request id "0HMU2KJ0JQDG8:00000009": done reading request body.
+2023-10-01 17:39:11.845 +00:00 [DBG] JSON input formatter threw an exception: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 5 | BytePositionInLine: 0.
+2023-10-01 17:39:11.846 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:39:11.846 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:39:11.847 +00:00 [DBG] Attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:39:11.851 +00:00 [DBG] Done attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:39:11.854 +00:00 [DBG] The request has model state errors, returning an error response.
+2023-10-01 17:39:11.859 +00:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-10-01 17:39:11.860 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:39:11.861 +00:00 [DBG] No information found on request to perform content negotiation.
+2023-10-01 17:39:11.863 +00:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-10-01 17:39:11.863 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-10-01 17:39:11.864 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-01 17:39:11.869 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API) in 74.3876ms
+2023-10-01 17:39:11.870 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:39:11.879 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:39:11.880 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:39:11.880 +00:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 132 - 400 - application/problem+json;+charset=utf-8 86.8023ms
+2023-10-01 17:39:35.882 +00:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 131
+2023-10-01 17:39:35.882 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:39:35.883 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)' with route pattern 'api/driver/{id:guid}' is valid for the request path '/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df'
+2023-10-01 17:39:35.883 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:39:35.883 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:39:35.883 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:39:35.883 +00:00 [INF] Route matched with {action = "UpdateDriver", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateDriverAsync(System.Guid, formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto) on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:39:35.883 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:39:35.883 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:39:35.883 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:39:35.883 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:39:35.883 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:39:35.884 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:39:35.885 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:39:35.885 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:39:35.885 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:39:35.885 +00:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2023-10-01 17:39:35.886 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:39:35.886 +00:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2023-10-01 17:39:35.886 +00:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2023-10-01 17:39:35.886 +00:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2023-10-01 17:39:35.886 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:39:35.886 +00:00 [DBG] Attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' using the name '' in request data ...
+2023-10-01 17:39:35.888 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-01 17:39:35.888 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8", Request id "0HMU2KJ0JQDG8:0000000A": started reading request body.
+2023-10-01 17:39:35.889 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8", Request id "0HMU2KJ0JQDG8:0000000A": done reading request body.
+2023-10-01 17:39:35.889 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'
+2023-10-01 17:39:35.890 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:39:35.891 +00:00 [DBG] Done attempting to bind parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:39:35.894 +00:00 [DBG] Attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto' ...
+2023-10-01 17:39:35.895 +00:00 [DBG] Done attempting to validate the bound parameter 'updateDriverDto' of type 'formulaOne.API.DTOs.Requests.Driver.UpdateDriverDto'.
+2023-10-01 17:39:35.899 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:39:35.900 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:39:35.900 +00:00 [DBG] Created DbConnection. (0ms).
+2023-10-01 17:39:35.914 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (15ms).
+2023-10-01 17:39:35.915 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (16ms).
+2023-10-01 17:39:35.915 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:39:35.915 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:39:35.915 +00:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE d."Id" = @__id_0 AND NOT (d."IsDeleted")
+LIMIT 1
+2023-10-01 17:39:35.993 +00:00 [INF] Executed DbCommand (78ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE d."Id" = @__id_0 AND NOT (d."IsDeleted")
+LIMIT 1
+2023-10-01 17:39:35.996 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:39:35.997 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:39:35.997 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 3ms reading results.
+2023-10-01 17:39:35.998 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:39:35.999 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:39:35.999 +00:00 [DBG] SaveChanges starting for 'APIDbContext'.
+2023-10-01 17:39:36.001 +00:00 [DBG] DetectChanges starting for 'APIDbContext'.
+2023-10-01 17:39:36.001 +00:00 [DBG] The unchanged property 'Driver.DriverNumber' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-10-01 17:39:36.002 +00:00 [DBG] An entity of type 'Driver' tracked by 'APIDbContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:39:36.002 +00:00 [DBG] The unchanged property 'Driver.UpdatedAt' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-10-01 17:39:36.003 +00:00 [DBG] DetectChanges completed for 'APIDbContext'.
+2023-10-01 17:39:36.011 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:39:36.011 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:39:36.012 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:39:36.012 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:39:36.013 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-10-01 17:39:36.013 +00:00 [DBG] Executing DbCommand [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Drivers" SET "DriverNumber" = @p0, "UpdatedAt" = @p1
+WHERE "Id" = @p2;
+2023-10-01 17:39:36.017 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Drivers" SET "DriverNumber" = @p0, "UpdatedAt" = @p1
+WHERE "Id" = @p2;
+2023-10-01 17:39:36.018 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:39:36.018 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2023-10-01 17:39:36.018 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:39:36.019 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:39:36.019 +00:00 [DBG] An entity of type 'Driver' tracked by 'APIDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:39:36.020 +00:00 [DBG] SaveChanges completed for 'APIDbContext' with 1 entities written to the database.
+2023-10-01 17:39:36.021 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-10-01 17:39:36.021 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API) in 137.272ms
+2023-10-01 17:39:36.021 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.UpdateDriverAsync (formulaOne.API)'
+2023-10-01 17:39:36.023 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:39:36.024 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:39:36.025 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:39:36.025 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:39:36.027 +00:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5176/api/driver/56c9fc6b-a010-4a54-9e6a-ede996fad4df application/json 131 - 204 - - 144.5429ms
+2023-10-01 17:40:20.753 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5176/api/driver - -
+2023-10-01 17:40:20.754 +00:00 [DBG] 1 candidate(s) found for the request path '/api/driver'
+2023-10-01 17:40:20.754 +00:00 [DBG] Endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)' with route pattern 'api/driver' is valid for the request path '/api/driver'
+2023-10-01 17:40:20.754 +00:00 [DBG] Request matched endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:40:20.754 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-01 17:40:20.754 +00:00 [INF] Executing endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:40:20.754 +00:00 [INF] Route matched with {action = "GetDrivers", controller = "Driver"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[formulaOne.API.DTOs.Responses.DriverResponseDto]]] GetDriversAsync() on controller formulaOne.API.Controllers.DriverController (formulaOne.API).
+2023-10-01 17:40:20.754 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-01 17:40:20.755 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-01 17:40:20.755 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-01 17:40:20.755 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-01 17:40:20.755 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-01 17:40:20.755 +00:00 [DBG] Executing controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:40:20.756 +00:00 [DBG] Entity Framework Core 7.0.11 initialized 'APIDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.11+c25a0d7b68d66c6ab3849a3b4333964faea6adc9' with options: None
+2023-10-01 17:40:20.756 +00:00 [DBG] Executed controller factory for controller formulaOne.API.Controllers.DriverController (formulaOne.API)
+2023-10-01 17:40:20.759 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:40:20.759 +00:00 [DBG] Creating DbConnection.
+2023-10-01 17:40:20.760 +00:00 [DBG] Created DbConnection. (0ms).
+2023-10-01 17:40:20.762 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2023-10-01 17:40:20.762 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2023-10-01 17:40:20.763 +00:00 [DBG] Opening connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:40:20.763 +00:00 [DBG] Opened connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:40:20.768 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:40:20.771 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."CreatedAt", d."DateOfBirth", d."DeletedAt", d."DriverNumber", d."FirstName", d."IsDeleted", d."LastName", d."UpdatedAt"
+FROM "Drivers" AS d
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:40:20.772 +00:00 [DBG] Context 'APIDbContext' started tracking 'Driver' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:40:20.775 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-01 17:40:20.777 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-10-01 17:40:20.777 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2023-10-01 17:40:20.778 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:40:20.783 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."DeletedAt", a."DriverId", a."IsDeleted", a."PolePosition", a."RaceWins", a."UpdatedAt", a."WorldChampionshipTitles", d."Id"
+FROM "Drivers" AS d
+INNER JOIN "Achievements" AS a ON d."Id" = a."DriverId"
+WHERE NOT (d."IsDeleted")
+ORDER BY d."CreatedAt", d."Id"
+2023-10-01 17:40:20.784 +00:00 [DBG] Context 'APIDbContext' started tracking 'Achievement' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-10-01 17:40:20.785 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:40:20.785 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 13ms reading results.
+2023-10-01 17:40:20.786 +00:00 [DBG] Closing data reader to 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:40:20.787 +00:00 [DBG] A data reader for 'formulaOneDb' on server 'tcp://localhost:5432' is being disposed after spending 3ms reading results.
+2023-10-01 17:40:20.787 +00:00 [DBG] Closing connection to database 'formulaOneDb' on server 'tcp://localhost:5432'.
+2023-10-01 17:40:20.788 +00:00 [DBG] Closed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:40:20.795 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-01 17:40:20.796 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-10-01 17:40:20.796 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-10-01 17:40:20.797 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-01 17:40:20.797 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-01 17:40:20.798 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-01 17:40:20.798 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[formulaOne.API.DTOs.Responses.DriverResponseDto, formulaOne.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-01 17:40:20.803 +00:00 [INF] Executed action formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API) in 47.8894ms
+2023-10-01 17:40:20.803 +00:00 [INF] Executed endpoint 'formulaOne.API.Controllers.DriverController.GetDriversAsync (formulaOne.API)'
+2023-10-01 17:40:20.805 +00:00 [DBG] Connection id "0HMU2KJ0JQDG8" completed keep alive response.
+2023-10-01 17:40:20.805 +00:00 [DBG] 'APIDbContext' disposed.
+2023-10-01 17:40:20.806 +00:00 [DBG] Disposing connection to database 'formulaOneDb' on server ''.
+2023-10-01 17:40:20.806 +00:00 [DBG] Disposed connection to database 'formulaOneDb' on server '' (0ms).
+2023-10-01 17:40:20.807 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5176/api/driver - - - 200 - application/json;+charset=utf-8 53.3447ms

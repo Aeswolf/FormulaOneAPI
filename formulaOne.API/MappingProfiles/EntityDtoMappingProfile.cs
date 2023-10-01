@@ -18,6 +18,7 @@ public class EntityDtoMappingProfile : Profile
             .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth.ToString()));
         CreateMap<CreateDriverDto, Driver>()
             .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => DateOnly.Parse(src.DateOfBirth)));
-        CreateMap<UpdateDriverDto, Driver>();
+        CreateMap<UpdateDriverDto, Driver>()
+            .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => DateOnly.Parse(src.DateOfBirth))); ;
     }
 }

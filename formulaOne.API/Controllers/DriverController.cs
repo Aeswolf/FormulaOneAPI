@@ -100,6 +100,34 @@ public class DriverController : BaseController
         }
     }
 
+    [HttpPut("{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> UpdateDriverAsync(Guid id, [FromBody] UpdateDriverDto updateDriverDto)
+    {
+        if (id != updateDriverDto.Id) return BadRequest("Invalid id");
 
+        if (!ModelState.IsValid) return BadRequest(ModelState);
+
+        try
+        {
+            Driver? driver = _mapper.Map<Driver>(updateDriverDto);
+
+            driver = await _unitOfWork.driverRepository.UpdateAsync(id, driver);
+
+            if (driver is null) return NotFound($"Driver with id {id} could not be found");
+
+            await _unitOfWork.SaveChangesAsync();
+
+            return NoContent();
+        }
+        catch (ApplicationException)
+        {
+            _logger.Error("Error occurred while updating a driver");
+            return StatusCode(StatusCodes.Status500InternalServerError, "Failed to update driver");
+        }
+    }
 
 }
