@@ -70,7 +70,7 @@ public class DriverRepository : GenericRepository<Driver>, IDriverRepository
     {
         try
         {
-            Driver? driverWithId = await _dbSet!.FirstOrDefaultAsync(d => d.Id == id && d.IsDeleted == false);
+            Driver? driverWithId = await _dbSet!.Include(d => d.Achievements).FirstOrDefaultAsync(d => d.Id == id && d.IsDeleted == false);
 
             return driverWithId;
         }
