@@ -8,12 +8,10 @@ namespace formulaOne.DataService.Repositories.Implementations;
 public class GenericRepository<T> : IGenericRepository<T> where T : class
 {
     protected ILogger _logger;
-    private APIDbContext _context;
-    internal DbSet<T>? _dbSet;
+    internal DbSet<T> _dbSet;
 
     public GenericRepository(APIDbContext context, ILogger logger)
     {
-        _context = context;
         _logger = logger;
         _dbSet = context.Set<T>();
     }
